@@ -1,8 +1,9 @@
+import argparse
 import os
 from pathlib import Path
-import vk_api
+
 import requests
-import argparse
+import vk_api
 
 MAX_COUNT = 200
 
