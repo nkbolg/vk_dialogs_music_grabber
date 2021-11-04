@@ -12,7 +12,7 @@ def do_job(login, password, uid, odir):
         os.mkdir(odir)
     vk_sess = vk_api.VkApi(login, password)
     try:
-        vk_sess.auth(token_only=True)
+        vk_sess.auth()
     except vk_api.AuthError as error_msg:
             print(error_msg)
             return
